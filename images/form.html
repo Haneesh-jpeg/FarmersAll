@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmersAll</title>
+    <link rel="stylesheet" href="fstyle.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+           <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> -->
+            </svg>
+            <span class="ml-3 text-xl">FarmersAll</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="Home.html" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="#" class="mr-5 hover:text-gray-900">About</a>
+            <a href="contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+            <a href="form.html" class="mr-5 hover:text-gray-900">Form</a>
+          </nav>
+          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button>
+          <div>
+            
+        
+          </header>
+          <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="5">
+          </div>
+          <div>
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="2019-06-10">
+          </div>
+          <div>
+            Favorite Food
+            <div>
+              <label for="banana">Banana</label>
+              <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+              <label for="apple">Apple</label>
+              <input type="checkbox" name="apple" id="apple">
+            </div>
+          </div>
+          <div>
+            Gender
+            <div>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" value="female">
+            </div>
+          </div>
+          <div>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor" multiple>
+              <option value="Green">Green</option>
+              <option label="Red" value="Red"></option>
+            </select>
+          </div>
+          <div>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio"></textarea>
+          </div>
+          <input type="hidden" name="hidden" value="hi">
+          <div>
+            <label for="file">File</label>
+            <input id="file" type="file" name="file">
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+          </div>
+          <div>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+          </div>
+          <div>
+            <label>
+              Password
+              <input type="password" name="password" required>
+            </label>
+          </div>
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </form>
+              
+             
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <!-- Side Links Only -->
+              <div class="side-links">
+                <a href="https://youtu.be/fNcJuPIZ2WE" target="_blank" class="side-link side-link-youtube">
+                  <i class="fab fa-youtube-square side-link-icon"></i>
+                  <span class="side-link-text">View Tutorial</span>
+                </a>
+                <a href="https://github.com/WebDevSimplified" target="_blank" class="side-link side-link-github side-link-icon">
+                  <i class="fab fa-github-square"></i>
+                  <span class="side-link-text">View GitHub</span>
+                </a>
+                <a href="https://twitter.com/DevSimplified" target="_blank" class="side-link side-link-twitter">
+                  <i class="fab fa-twitter-square side-link-icon"></i>
+                  <span class="side-link-text">View Twitter</span>
+                </a>
+              </div>
+        
+          </body>
+          </html>

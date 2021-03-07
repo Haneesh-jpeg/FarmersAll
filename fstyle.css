@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.txt{
+    size: 300px;
+}
+input{
+    width: 60px;
+}
+input[type="text"]{
+    border: 2px solid black;
+}
+
+.form1{
+    padding: 0;
+    margin: 0;
+    padding-left: 90px;
+    
+}
+.form2{
+    padding-left: 90px;
+}
+.form3{
+    padding-left: 90px;
+}

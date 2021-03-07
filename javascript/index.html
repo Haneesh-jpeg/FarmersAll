@@ -1,0 +1,29 @@
+<title>Upload files with Fetch ApI</title>
+<meta name = "viewport" content="width=device-width, initial-scale=1.0">
+
+<body>
+    <h1>Upload files with Fetch API</h1>
+    <form class="form" id="myForm">
+        <input type = "file" id="inpFile"><br>
+        <button type = "submit">Upload file</button>
+    </form>
+
+    <script>
+        const myFrom = document.getElementById("myForm");
+        const inpFile = document.getElementById("inpFile");
+        
+        myForm.addEventListener("submit", e => {
+            e.preventDefault();
+
+            const endpoint = "upload.php";
+            const formData = new FormData();
+
+            formData.append("inpFile",inpFile.files[0]);
+
+            fetch(endpoint, { 
+                method: "post".
+                body, formData
+            }).catch(console.error);
+        });
+    </script>
+</body>
